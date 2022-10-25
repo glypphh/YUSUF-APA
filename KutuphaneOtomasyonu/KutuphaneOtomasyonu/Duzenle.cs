@@ -18,11 +18,12 @@ namespace KutuphaneOtomasyonu
         {
             InitializeComponent();
             anaEkran = parametredenGelenAnaEkran;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            anaEkran.kitapEkle(textBox2.Text);
+            anaEkran.kitapEkle(Degistir.Text);
             anaEkran.Show();
             this.Close();
 
@@ -31,6 +32,11 @@ namespace KutuphaneOtomasyonu
         private void Duzenle_FormClosed(object sender, FormClosedEventArgs e)
         {
             anaEkran.Show();
+        }
+
+        private void Duzenle_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

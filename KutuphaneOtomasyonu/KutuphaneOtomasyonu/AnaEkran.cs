@@ -31,9 +31,11 @@ namespace KutuphaneOtomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Remove(listBox1.SelectedItem);
             Duzenle duzenle = new Duzenle(this);
             duzenle.Show();
             this.Hide();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
